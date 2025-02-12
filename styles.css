@@ -1,0 +1,238 @@
+/* MAIN COLOURS */
+:root {
+    --main-blue-color: rgb(0, 9, 175);
+    --green-result-color: rgb(0, 90, 7);
+    --red-result-color: rgb(160, 0, 0);
+}
+
+/* FONTS */
+
+.ibm-plex-mono-thin {
+    font-family: "IBM Plex Mono", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.ibm-plex-mono-extralight {
+font-family: "IBM Plex Mono", serif;
+font-weight: 200;
+font-style: normal;
+}
+
+.ibm-plex-mono-light {
+font-family: "IBM Plex Mono", serif;
+font-weight: 300;
+font-style: normal;
+}
+
+.ibm-plex-mono-regular {
+font-family: "IBM Plex Mono", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.ibm-plex-mono-medium {
+font-family: "IBM Plex Mono", serif;
+font-weight: 500;
+font-style: normal;
+}
+
+.ibm-plex-mono-semibold {
+font-family: "IBM Plex Mono", serif;
+font-weight: 600;
+font-style: normal;
+}
+
+.ibm-plex-mono-bold {
+font-family: "IBM Plex Mono", serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.ibm-plex-mono-thin-italic {
+font-family: "IBM Plex Mono", serif;
+font-weight: 100;
+font-style: italic;
+}
+
+.ibm-plex-mono-extralight-italic {
+font-family: "IBM Plex Mono", serif;
+font-weight: 200;
+font-style: italic;
+}
+
+.ibm-plex-mono-light-italic {
+font-family: "IBM Plex Mono", serif;
+font-weight: 300;
+font-style: italic;
+}
+
+.ibm-plex-mono-regular-italic {
+font-family: "IBM Plex Mono", serif;
+font-weight: 400;
+font-style: italic;
+}
+
+.ibm-plex-mono-medium-italic {
+font-family: "IBM Plex Mono", serif;
+font-weight: 500;
+font-style: italic;
+}
+
+.ibm-plex-mono-semibold-italic {
+font-family: "IBM Plex Mono", serif;
+font-weight: 600;
+font-style: italic;
+}
+
+.ibm-plex-mono-bold-italic {
+font-family: "IBM Plex Mono", serif;
+font-weight: 700;
+font-style: italic;
+}
+  
+
+/* MAIN PAGE */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(60deg, rgba(217, 217, 217, 0.7), rgba(238, 238, 238, 0.9));
+}
+
+.message {
+    font-weight: 700;
+    text-align: center;
+    width: 80%;
+}
+
+.title {
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    color: var(--main-blue-color);
+    font-size: 3em;
+}
+
+.subtitle {
+    margin-top: 2vh;
+    font-style: italic;
+    font-size: 1.8em;
+}
+
+div {
+    margin-top: 2vh;
+    background-color: white;
+}
+
+#input-box {
+    height: auto;
+    min-height: 20vh;
+    width: 40%;
+    max-width: 800px;
+    min-width: 300px;
+    padding: 15px 30px;
+    border: 4px solid var(--main-blue-color);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#user-message {
+    justify-content: left;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+#text-input {
+    height: 1.4em;
+    border: none;
+    border-bottom: 3px solid var(--main-blue-color);
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-top: 2vh;
+    margin-bottom: 15px;
+}
+
+#text-input:focus {
+    outline: none;
+}
+
+#check-btn {
+    width: 20%;
+    min-width: 5em;
+    height: 2em;
+    font-size: 1.4em;
+    font-weight: 600;
+    background-color: white;
+    color: var(--main-blue-color);
+    border: 4px solid var(--main-blue-color);
+    border-radius: 5px;
+    margin: auto 0 0 auto;
+}
+
+#check-btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--main-blue-color);
+}
+
+#result {
+    width: 40%;
+    height: auto;
+    min-height: 5em;
+    border-radius: 15px;
+    padding: 15px 30px;
+}
+
+#result > * {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .title {
+        font-size: 2.2em;
+    }
+
+    .subtitle {
+        font-size: 1.5em;
+    }
+
+    #check-btn {
+        font-size: 1.2em;
+    }
+
+    #result > * {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .title {
+        font-size: 1.8em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+    }
+}
